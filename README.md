@@ -6,12 +6,12 @@
 - orthogonal corners can be selectively chamfered or filleted.
 
 The operation of chamfering leads to corners being replaced with 45&deg; slanting edges. An example of inside corners of a polygon being chamfered is shown below:
-<p align="center" width="100%"><img src="./demo/chamfer_example.png" width="50%" height="50%"><p>
+<p align="center" width="100%"><img src="https://github.com/arun-goud/gdschamfer/blob/main/demo/chamfer_example.png" width="50%" height="50%"><p>
 
 On the other hand, the filleting operation that gdspy's `fillet()` function does will result in concave curved corners for inside corners and convex (or rounded) corners for outside corners. When the fillet radius of curvature tends to infinity the resulting fillet starts to approximate a chamfer.
 
 # Usage #
-To use ***gdschamfer*** install its PyPI python distribution package using pip:
+To use ***gdschamfer*** install its [PyPI python distribution package](https://pypi.org/project/gdschamfer/) using pip:
 
 ```
 pip install gdschamfer
@@ -31,25 +31,25 @@ There are 3 functions available for use:
 3) **`gdschamfer.chamfer_gds(...)`**: Use this to perform chamfering on GDSII file.
 
 # Chamfer style #
-To understand how the option **chamfer_style** modifies the corners consider the GDSII file [`demo/input.gds`](./demo/input.gds) shown below:
+To understand how the option **chamfer_style** modifies the corners consider the GDSII file [`demo/input.gds`](https://github.com/arun-goud/gdschamfer/blob/main/demo/input.gds) shown below:
 
-<p align="center" width="100%"><img src="./demo/input_gds.png"><p>
+<p align="center" width="100%"><img src="https://github.com/arun-goud/gdschamfer/blob/main/demo/input_gds.png"><p>
 
 ---
 ## a) When **chamfer_style = <span style="color:blue">"inside_corners"</span>**: ##
 
-![GDSII with 3 polygons, with 2 on layer 20 and 1 on layer 22](./demo/chamfer_inside_corners.png)
+![GDSII with 3 polygons, with 2 on layer 20 and 1 on layer 22 showing chamfered inside corners](https://github.com/arun-goud/gdschamfer/blob/main/demo/chamfer_inside_corners.png)
 
 ---
-## b) When **chamfer_style = <span style="color:red">"outide_corners"</span>**: ##
+## b) When **chamfer_style = <span style="color:red">"outside_corners"</span>**: ##
 
-![GDSII with 3 polygons, with 2 on layer 20 and 1 on layer 22](./demo/chamfer_outside_corners.png)
+![GDSII with 3 polygons, with 2 on layer 20 and 1 on layer 22 showing chamfered outside corners](https://github.com/arun-goud/gdschamfer/blob/main/demo/chamfer_outside_corners.png)
 
 ---
 
 ## c) When **chamfer_style = <span style="color:green">"all_corners"</span>**: ##
 
-![GDSII with 3 polygons, with 2 on layer 20 and 1 on layer 22](./demo/chamfer_all_corners.png)
+![GDSII with 3 polygons, with 2 on layer 20 and 1 on layer 22 showing chamfered corners](https://github.com/arun-goud/gdschamfer/blob/main/demo/chamfer_all_corners.png)
 
 ---
 
