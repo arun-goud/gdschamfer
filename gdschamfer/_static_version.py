@@ -1,4 +1,11 @@
-# Copyright (c) Microsoft Corporation. All rights reserved.
+######################################################################
+#                                                                    #
+#              Copyright Arun Goud Akkala 2021.                      #
+#  Distributed under the Boost Software License, Version 1.0.        #
+#          (See accompanying LICENSE file or copy at                 #
+#            https://www.boost.org/LICENSE_1_0.txt)                  #
+#                                                                    #
+######################################################################
 
 # This file is part of 'miniver': https://github.com/jbweston/miniver
 #

@@ -1,4 +1,12 @@
 #!/usr/bin/env python
+######################################################################
+#                                                                    #
+#              Copyright Arun Goud Akkala 2021.                      #
+#  Distributed under the Boost Software License, Version 1.0.        #
+#          (See accompanying LICENSE file or copy at                 #
+#            https://www.boost.org/LICENSE_1_0.txt)                  #
+#                                                                    #
+######################################################################
 
 import sys
 import copy
@@ -7,6 +15,7 @@ import numpy as np
 from gdspy.library import Cell, GdsWriter, GdsLibrary
 from gdspy.polygon import Polygon, PolygonSet
 from gdspy.operation import boolean
+
 
 def chamfer_polygons(polys, radius, points_per_2pi=2, chamfer_style="inside_corners", orthogonal_corners_only=False):
     """
@@ -215,6 +224,7 @@ def chamfer_cell(cell, layer=None, radius=2, points_per_2pi=2, chamfer_style="in
         for cp in chamfer_polys.polygons:
             D_ch.add(Polygon(cp, layer=lname[0], datatype=lname[1]))    
     return D_ch
+
 
 def chamfer_gds(in_gds, out_gds, cellname="TOP", layer=None, precision=1e-9, radius=2, points_per_2pi=2, chamfer_style="inside_corners", orthogonal_corners_only=False):
     """

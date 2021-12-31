@@ -11,7 +11,7 @@ The operation of chamfering leads to corners being replaced with 45&deg; slantin
 On the other hand, the filleting operation that gdspy's `fillet()` function does will result in concave curved corners for inside corners and convex (or rounded) corners for outside corners. When the fillet radius of curvature tends to infinity the resulting fillet starts to approximate a chamfer.
 
 # Usage #
-To use ***gdschamfer*** as a python package:
+To use ***gdschamfer*** install its PyPI python distribution package using pip:
 
 ```
 pip install gdschamfer
